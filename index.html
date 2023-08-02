@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/3b859e1fe2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo 500x500 px.png" class="logo">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hey, this is <span>Dibyojyoti Deb</span><br>Welcome to my Profile</h1>
+                <p><span>Web Developer</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="MUN 2022 Pic.jpg" alt="Anindya">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a skilled programmer and enthusiastic web developer. I am passionate towards learning and
+                        self improvement and intend to devote my focus towards personal growth over anything else.
+                        I come from a beautiful city called Shillong and currently reside in Bhubaneshwar pursuing my 
+                        B.Tech degree under the discipline of Computer Science and Engineering from KIIT University.
+                        Below are my details for your ready reference.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>July 2023 - Current</span><br>Web developer intern at CodeClause</li>
+                            <li><span>July 2023 - Current</span><br>Web developer intern at Cloud Counselage Pvt. Ltd.</li>
+                            <li><span>June 2023 - Current</span><br>Content writer for Microsoft Learn Student's Ambassadors(MLSA),KIIT Chapter</li>
+                            <li><span>June 2023 - July 2023</span><br>Soft skills training from TCS</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>January 2023 - July 2023</span><br>Web Development training from Udemy under Dr. Angela Yu</li>
+                            <li><span>2021 - Current</span><br>B.Tech in CSE from Kalinga Institute of Industrial Technology, Bhubaneswar</li>
+                            <li><span>2018 - 2020</span><br>Higher secondary education from Kendriya Vidyalaya - Nehu, Shillong</li>
+                            <li><span>2007 - 2018</span><br>Secondary education from St. Edmunds School, Shillong</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="subtitle">Services Offered</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I enjoy designing and developing web pages thereby exhibiting my creativity</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Content Writing</h2>
+                    <p>I am a professional content writer and love to express my thoughts through words.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="container">
+            <h1 class="subtitle">My Skills</h1>
+            <table cellspacing="15">
+                
+                    <div class="skill"></div>
+                <tr>
+                    <td><div class="skill-title" class="skill">HTML</div></td>
+                    <td><div class="skill-title" class="skill">CSS</div></td>
+                </tr>
+                </tr>
+                    <td><div class="skill-title" class="skill">Javascript</div></td>
+                    <td><div class="skill-title" class="skill">C</div></td>
+                </tr>
+                <tr>
+                    <td><div class="skill-title" class="skill">C++</div></td> 
+                    <td><div class="skill-title" class="skill">Java</div></td>
+                </tr>
+                <tr>
+                    <td><div class="skill-title" class="skill">Content Writing</div></td>
+                    <td><div class="skill-title" class="skill">Poetry</div></td>
+                </tr>
+            </table></div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Details</h1>
+                    <p><i class="fa-solid fa-envelope"></i> dibyojyotideb@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +917085859576</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/dibyojyoti-deb-38617025b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dibyojyoti-deb"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/flaming_phoenix_within/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/phoenix__within"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="Dibyojyoti Deb CV Final.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Designed by <span>Dibyojyoti Deb</span> | © 2023 All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
